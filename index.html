@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人简历</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --subtext: #6b7280;
+      --primary: #2563eb;
+      --border: #e5e7eb;
+      --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(160deg, #f8fbff 0%, var(--bg) 50%, #eef2ff 100%);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: var(--subtext);
+      font-size: 16px;
+    }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 22px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    .timeline-item {
+      border: 1px solid #eef2f7;
+      background: #fbfdff;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .time {
+      color: var(--subtext);
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .item-head {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      background: #fff;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .main {
+      font-weight: 600;
+    }
+
+    .desc {
+      margin-top: 4px;
+      color: #334155;
+    }
+
+    .hobbies {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .header,
+      .section {
+        padding: 18px;
+      }
+
+      .name {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1 class="name">个人简历</h1>
+      <p class="subtitle">软件工程师 | 数据与金融科技方向</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">教育经历</h2>
+      <article class="timeline-item">
+        <div class="time">2015.09 - 2019.06</div>
+        <div class="item-head">
+          <img class="logo" src="./assets/logos/sysu.svg" alt="中山大学 Logo" loading="lazy" />
+          <div class="main">中山大学 · 软件工程 · 本科</div>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="time">2019.09 - 2020.11</div>
+        <div class="item-head">
+          <img class="logo" src="./assets/logos/hkust.svg" alt="香港科技大学 Logo" loading="lazy" />
+          <div class="main">香港科技大学 · 大数据科技 · 硕士研究生</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">实习经历</h2>
+      <article class="timeline-item">
+        <div class="time">2018.06 - 2018.09</div>
+        <div class="item-head">
+          <img class="logo" src="./assets/logos/huawei.svg" alt="华为 Logo" loading="lazy" />
+          <div class="main">华为 · 电信软件与服务产品线 · 软件工程师</div>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="time">2019.03 - 2019.06</div>
+        <div class="item-head">
+          <img class="logo" src="./assets/logos/joyy.svg" alt="JOYY Logo" loading="lazy" />
+          <div class="main">欢聚时代 JOYY · 用户增长数据平台研发部 · 软件工程师</div>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="time">2020.09 - 2020.11</div>
+        <div class="item-head">
+          <img class="logo" src="./assets/logos/gf.svg" alt="广发证券 Logo" loading="lazy" />
+          <div class="main">广发证券 · 信息技术部 · 软件工程师</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">工作经历</h2>
+      <article class="timeline-item">
+        <div class="time">2021.03 - 至今</div>
+        <div class="item-head">
+          <img class="logo" src="./assets/logos/gf.svg" alt="广发证券 Logo" loading="lazy" />
+          <div class="main">广发证券 · 信息技术部 · 软件工程师</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">兴趣爱好</h2>
+      <ul class="hobbies">
+        <li>网球（3.5 水平）</li>
+        <li>羽毛球</li>
+        <li>旅行</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
